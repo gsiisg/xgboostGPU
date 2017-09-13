@@ -60,5 +60,5 @@ https://xgboost.readthedocs.io/en/latest/build.html#building-on-windows
    This will create the xgboost.sln solution file in the 'build' directory that was just created
 
 4. Build using Visual Studio 14 2015
-   
-   double click on the 'xgboost.sln' file, this should start Visual Studio 14 2015  
+Inline-style: 
+![alt text](https://github.com/gsiisg/xgboostGPU/edit/master/VS2015_1.PNG "Visual Studio 2015 screen capture 1")

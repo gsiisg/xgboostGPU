@@ -7,6 +7,7 @@ This tutorial is for setting up xgboost with GPU support
 1. Windows 10 Pro
 
 2. Anaconda with python 3.6
+
    https://www.anaconda.com/download/  
 
 3. Tensorflow 1.3 with GPU support
@@ -21,14 +22,18 @@ This tutorial is for setting up xgboost with GPU support
    
 
 4. Git for windows
-https://git-scm.com/download/win
+
+   https://git-scm.com/download/win  
 
 5. Visual Studio 14 2015 (I tried Visual Studio 15 2017 but ran into errors so reverted to using older Visual Studio)
--> do custom install and add the "Visual C++" package it will be needed
-https://imagine.microsoft.com/en-us/Catalog/Product/101
+
+   https://imagine.microsoft.com/en-us/Catalog/Product/101  
+  * do custom install and add the "Visual C++" package, it will be needed
+
 
 6. CMake for windows
-https://cmake.org/download/
+
+   https://cmake.org/download/  
 
 # Installation Steps
 I basically followed the guide at the following link, using Visual Studio instead of mingw to build

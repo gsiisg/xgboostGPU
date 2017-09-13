@@ -9,15 +9,16 @@ This tutorial is for setting up xgboost with GPU support
 2. Anaconda with python 3.6
    https://www.anaconda.com/download/  
 
-3. Tensorflow 1.3 with GPU support which required
+3. Tensorflow 1.3 with GPU support
 
    https://www.tensorflow.org/install/install_windows
-
+   Here I just installed tensorflow with GPU as the default and did not use a virtual environment  
+   which required:  
   * CUDA Toolkit 8.0
   * Nvidia Drivers for my aging 980 GTX
   * cuDNN v6 (not required by xgboost)
   
-   Here I just installed tensorflow with GPU as the default and did not use a virtual environment  
+   
 
 4. Git for windows
 https://git-scm.com/download/win

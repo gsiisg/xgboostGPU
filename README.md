@@ -13,6 +13,7 @@ This tutorial is for setting up xgboost with GPU support
   * CUDA Toolkit 8.0
   * Nvidia Drivers for my aging 980 GTX
   * cuDNN v6 (not required by xgboost)
+  
    https://www.tensorflow.org/install/install_windows  
    Here I just installed tensorflow with GPU as the default and did not use a virtual environment  
 

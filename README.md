@@ -61,4 +61,5 @@ https://xgboost.readthedocs.io/en/latest/build.html#building-on-windows
 
 4. Build using Visual Studio 14 2015
 Inline-style: 
-![alt text](https://github.com/gsiisg/xgboostGPU/edit/master/VS2015_1.PNG "Visual Studio 2015 screen capture 1")
+
+   ![alt text](/edit/master/VS2015_1.PNG "Visual Studio 2015 screen capture 1")  

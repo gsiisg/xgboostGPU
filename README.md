@@ -1,4 +1,4 @@
-# How to compile xgboost with GPU support on windows 10
+# How to compile xgboost with GPU support on windows 10 with python wrapper
 
 This tutorial is for setting up xgboost with GPU support
 
@@ -19,8 +19,6 @@ This tutorial is for setting up xgboost with GPU support
   * Nvidia Drivers for my aging 980 GTX
   * cuDNN v6 (not required by xgboost)
   
-   
-
 4. Git for windows
 
    https://git-scm.com/download/win  
@@ -29,8 +27,7 @@ This tutorial is for setting up xgboost with GPU support
 
    https://imagine.microsoft.com/en-us/Catalog/Product/101  
   * do custom install and add the "Visual C++" package, it will be needed
-
-
+  
 6. CMake for windows
 
    https://cmake.org/download/  
@@ -60,6 +57,26 @@ https://xgboost.readthedocs.io/en/latest/build.html#building-on-windows
    This will create the xgboost.sln solution file in the 'build' directory that was just created
 
 4. Build using Visual Studio 14 2015
-Inline-style: 
+   Make sure the drop down boxes are selecting 'Release' and 'x64'
 
    ![alt text](/VS2015_1.PNG?raw=true "Visual Studio 2015 screen capture 1")  
+   
+   Right click on xgboost on the right panel and select 'build' (This is the part where I get error if I used Visual Studio 15 2017)
+   
+   ![alt text](/VS2015_2.PNG?raw=true "Visual Studio 2015 screen capture 2")  
+   
+5. Install python wrapper for xgboost with GPU
+   
+   cd ../python-package
+   python setup.py install
+   
+   Congrats, if everything was successful then xgboost is now installed with GPU support and python wrapper
+   
+# Test xgboost with GPU
+Running a quick script with xgboost with GPU and compare the difference with CPU:
+
+   cd ../demo
+   cd gpu_acceleration
+   python cover_type.py
+   
+With gpu the run time was ~15 sec and with CPU ~60 sec, so about a 4x speedup for me on a 980 GTX for this script, your milage may vary

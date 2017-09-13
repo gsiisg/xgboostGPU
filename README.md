@@ -11,7 +11,7 @@ This tutorial is for setting up xgboost with GPU support
 
 3. Tensorflow 1.3 with GPU support
 
-   https://www.tensorflow.org/install/install_windows
+   https://www.tensorflow.org/install/install_windows  
    Here I just installed tensorflow with GPU as the default and did not use a virtual environment  
    which required:  
   * CUDA Toolkit 8.0

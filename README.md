@@ -67,16 +67,16 @@ https://xgboost.readthedocs.io/en/latest/build.html#building-on-windows
    
 5. Install python wrapper for xgboost with GPU
    
-   cd ../python-package
-   python setup.py install
+   cd ../python-package  
+   python setup.py install  
    
    Congrats, if everything was successful then xgboost is now installed with GPU support and python wrapper
    
 # Test xgboost with GPU
 Running a quick script with xgboost with GPU and compare the difference with CPU:
 
-   cd ../demo
-   cd gpu_acceleration
-   python cover_type.py
+   cd ../demo  
+   cd gpu_acceleration  
+   python cover_type.py  
    
 With gpu the run time was ~15 sec and with CPU ~60 sec, so about a 4x speedup for me on a 980 GTX for this script, your milage may vary

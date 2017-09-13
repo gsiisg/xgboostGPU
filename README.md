@@ -40,18 +40,25 @@ I basically followed the guide at the following link, using Visual Studio instea
 https://xgboost.readthedocs.io/en/latest/build.html#building-on-windows
 
 1. Download xgboost source with git clone
-git clone --recursive https://github.com/dmlc/xgboost xgboostGPU
 
+   git clone --recursive https://github.com/dmlc/xgboost xgboostGPU  
+
+   Here I named the folder as xgboostGPU but if you omit that it will just use the default name xgboost  
+   
 2. Update xgboost submodule
-cd xgboostGPU
-git submodule init
-git submodule update
+
+   cd xgboostGPU  
+   git submodule init  
+   git submodule update  
 
 3. CMake to create build files
-mkdir build
-cd build
-cmake .. -G "Visual Studio 14 2015 Win64" -DUSE_CUDA=ON
-This will create the xgboost.sln solution file in the 'build' directory that was just created
+
+   mkdir build  
+   cd build  
+   cmake .. -G "Visual Studio 14 2015 Win64" -DUSE_CUDA=ON  
+   
+   This will create the xgboost.sln solution file in the 'build' directory that was just created
 
 4. Build using Visual Studio 14 2015
-double click on the 'xgboost.sln' file, this should start Visual Studio 14 2015
+   
+   double click on the 'xgboost.sln' file, this should start Visual Studio 14 2015  

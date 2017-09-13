@@ -62,4 +62,4 @@ https://xgboost.readthedocs.io/en/latest/build.html#building-on-windows
 4. Build using Visual Studio 14 2015
 Inline-style: 
 
-   ![alt text](/master/VS2015_1.PNG?raw=true "Visual Studio 2015 screen capture 1")  
+   ![alt text](/VS2015_1.PNG?raw=true "Visual Studio 2015 screen capture 1")  
